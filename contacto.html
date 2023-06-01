@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contácto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="productos.css">
+    </head>
+    <body>
+        <header>
+            <div class= "caja">
+                <h1><img src="imagenes/logo.png" alt="logo"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombrecompleto">Nombre y apellido</label>
+                <input type="text" id="nombrecompleto" class="input-padrom" required>
+                <br>
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" id="mail" class="input-padrom" required placeholder="example@example.com"> 
+                <br>
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" class="input-padrom" required placeholder="+(XX) XXX XXX XXXX">
+                <br>
+                <label for="areadetexto">Mensaje</label>
+                <textarea cols="70" rows="10" id="areadetexto" required></textarea >
+                <br>
+                <fieldset>
+                        <br>
+                        <legend>Elija un método de contácto</legend>
+                        <br>
+
+                        <label for="radio-mail"><input type="radio" name="contacto" id="radio-mail" value="email">Mail</label>
+                        
+                        <br>
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono"></input>Teléfono</label>
+                        
+
+                        <br>
+                        <label for="radio-web"><input type="radio" name="contacto" id="radio-web" checked></input>Web page</label>
+                        <br>
+                        <br>
+                </fieldset>
+
+                        <fieldset>
+                                <legend>¿En qué horario prefiere ser atendido?</legend>
+                                <select >
+                                    <option>Mañana</option>
+                                    <option>Tarde</option>
+                                    <option>Noche</option>
+                                </select>
+
+                        </fieldset>
+                
+                <br>
+                <br>
+
+                <label><input type="checkbox" class="checkbox" checked> Le gustaría recibir notificaciones de Alura Latam?</label>
+
+                <input type="submit" id="send" value="Enviar Formulario" class="enviar">
+            </form>
+
+                <table>
+                    <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Hora</th>
+
+                            </tr>
+                    </thead>
+                    
+                    <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>8 am a 10 am</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Miercoles</td>
+                                <td>8 am a 10 am</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Viernes</td>
+                                <td>8 am a 10 am</td>
+
+                            </tr>
+                    </tbody>
+
+                </table>
+
+        </main>
+    </body>
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="logo">
+        <p class="copy">&copy Barbería Alura 2023 &#128293</p>
+    </footer>
+    
+</html>
